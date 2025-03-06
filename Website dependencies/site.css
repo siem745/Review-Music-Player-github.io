@@ -9,7 +9,7 @@
 
     }
     section {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(241, 159, 211);
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -34,7 +34,7 @@
         flex: 1;
     }
     section { 
-    background-color: #FFD700;
+    background-color: #ffffff;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -68,13 +68,13 @@ h2,h3,h4 {
     color: #000000;
     display: block;
     text-align: left;
-    padding-left: 25%;
+    padding-left: 5%;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 p {
-    font-size:1.5vw;
+    font-size:3vw;
     color: #000000;
     padding: 10px 40px 10px 40px;
 }
@@ -88,6 +88,7 @@ ul {
 
 li {
     list-style-position: inside;
+    font-size:1.5vw
 }
 
 img {
@@ -100,16 +101,16 @@ img {
 }
 
 header {
-    background-color: #ff00b7;
+    background-color: #ee79e6;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: Arial, sans-serif; /* Apply the desired font */
+    font-family: Arial, sans-serif; 
 }
 
 .bg1 {
-    background-color: #f90617;
+    background-color: #ee79e6;
 }
 
 .bg2 {
@@ -129,7 +130,7 @@ iframe {
 
 footer {
     height: 100px;
-    background-color: #ff00b7;
+    background-color: #ee79e6;
 }
 
 #complete {
@@ -141,10 +142,9 @@ footer {
 }
 
 .portfolio-section {
-  font-family: Arial, sans-serif; /* Apply the desired font */
+  font-family: Arial, sans-serif; 
 }
 
-/* Add this to your CSS file */
 .image-spacing {
-  margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 20px;
 }
