@@ -40,7 +40,7 @@
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    font-size:1.5vw;
+    /*font-size:1.5vw;*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -54,7 +54,7 @@ body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     background-color: #de5252
 }
 
