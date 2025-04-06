@@ -29,9 +29,9 @@
         margin-right: auto;
         padding-left: 0;
         padding-right: 0;
-        display: flex;
+       /* display: flex;
         flex-wrap: wrap;
-        flex: 1;
+        flex: 1;*/
     }
     section { 
     background-color: #ffffff;
@@ -40,9 +40,8 @@
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    /*font-size:1.5vw;*/
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
     justify-content: space-evenly;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -152,4 +151,8 @@ footer {
 
 .image-spacing {
   margin-bottom: 20px;
+}
+.portfolio-header{
+    float:right;
+    color:darkgoldenrod;
 }
