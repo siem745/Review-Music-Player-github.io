@@ -22,10 +22,10 @@ const tagSelectors = [
   },
   {
     tag: 'h4',
-    name: '\"Who Am I\" header',
+    name: '"Who Am I" header',
     parent: 'div#element-1',
     sibling: 0,
-    text: 'Put \"Who Am I\" here'
+    text: 'Put "Who Am I" here'
   },
   {
     tag: 'ul',
