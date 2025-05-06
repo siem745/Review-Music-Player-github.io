@@ -154,5 +154,7 @@ footer {
 }
 
 .video-spacing {
+  width: 700px;
+  height: 350px;
   margin-bottom: 20px;
 }
