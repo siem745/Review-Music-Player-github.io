@@ -5,9 +5,9 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
-//Global Variables
+//Global Variables 
 Minim minim;
-int numberOfSongs = 1;
+int numberOfSongs = 4;
 //int numberOfSoundEffects = ???
 AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 //AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffects ];
@@ -18,48 +18,31 @@ Boolean deactivateAutoPlay=false;
 //
 float musicMenuX, musicMenuY, musicMenuWidth, musicMenuHeight;
 //
-//
 void setup() {
-  //Display
-  //fullScreen();
-  size(700, 500); //Prototyping Only
-  int appWidth = width; //displayWidth
-  int appHeight = height; //displayHeight
-  //
-  //Music Library
+  size(700, 500); // Prototyping Only
+  int appWidth = width;
+  int appHeight = height;
+
+  // Music Library
   minim = new Minim(this);
-  //String[] fileName = new String[ numberOfSongs ];
-  //Alternate Reading of Array
   String musicPathway = "MusicUsed/";
-  //Note: Download music and sound effects, then design your player with images, text, and 2D shapes
-  //See Google Search: Atari pong logo free image download
-  String MusicUsed = "AJR - BANG! ";
-  //Add all files, CS20 Review is special OS Java Library
-  //Including the reading of the number of files in the array
   String fileExtension_mp3 = ".mp3";
-  //
-  String musicDirectory = musicPathway;
-  String file = musicDirectory + MusicUsed + fileExtension_mp3; //relative pathway or directory
-  println( file );
-  //Create a FOR loop to loadFile() a changing songName
-  playList[ currentSong ] = minim.loadFile( file ); //ERROR: Verify Spelling & Library installed, Sketch / Import Library
-  //Music Testing
-  //playList[currentSong].play();
-  //
-  //Population
-  musicMenuX = appWidth*1/4;
-  musicMenuY = appHeight*1/4;
-  musicMenuWidth = appWidth*1/2;
-  musicMenuHeight = appHeight*1/2;
-  //
-  //DIVs
-  //rect(X, Y Width, Height);
+
+  // Load all songs into the playlist
+  String[] songNames = { "AJR - BANG!", "Song2", "Song3" }; // Add your song names here
+  for (int i = 0; i < numberOfSongs; i++) {
+    String file = musicPathway + songNames[i] + fileExtension_mp3;
+    println("Loading: " + file);
+    playList[i] = minim.loadFile(file);
+  }
+
+  // Population
+  musicMenuX = appWidth * 1 / 4;
+  musicMenuY = appHeight * 1 / 4;
+  musicMenuWidth = appWidth * 1 / 2;
+  musicMenuHeight = appHeight * 1 / 2;
+
   rect(musicMenuX, musicMenuY, musicMenuWidth, musicMenuHeight);
-  //rect(imageX, imageY, imageWidth, imageHeight);
-  //rect(loopInfiniteX, loopInfiniteY, loopInfiniteWidth, loopInfiniteHeight);
-  //rect(stopX, stopY, stopWidth, stopHeight);
-  //rect(soundEffectsX, soundEffectsY, soundEffectsWidth, soundEffectsHeight);
-  //
 } //End setup
 //
 void draw() {
