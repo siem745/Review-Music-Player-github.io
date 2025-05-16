@@ -25,11 +25,11 @@ void setup() {
 
   // Music Library
   minim = new Minim(this);
-  String musicPathway = "../../MusicUsed/";
+  String musicPathway = "MusicUsed/";
   String fileExtension_mp3 = ".mp3";
 
   // Load all songs into the playlist
-  String[] songNames = { "AJR - 3 O'Clock Things", "AJR - BANG!", "AJR - Karma", "Yes Im A Mess"}; // Names of the songs
+  String[] songNames = { "AJR - BANG!", "Song2", "Song3" }; // Names of the songs
   for (int i = 0; i < numberOfSongs; i++) {
     String file = musicPathway + songNames[i] + fileExtension_mp3;
     println("Loading: " + file);
