@@ -47,7 +47,10 @@ void drawMarks() {
 }
 
 void mousePressed() {
-  if (!gameOver) {
+  if (gameOver) {
+    resetGame();
+    winner = "";
+  } else {
     int i = floor(mouseY / (height / 3));
     int j = floor(mouseX / (width / 3));
     if (board[i][j] == 0) {
