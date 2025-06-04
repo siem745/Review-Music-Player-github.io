@@ -72,23 +72,23 @@ void checkWinner() {
   for (int i = 0; i < 3; i++) {
     if (board[i][0] != 0 && board[i][0] == board[i][1] && board[i][1] == board[i][2]) {
       gameOver = true;
-      winner = board[i][0] + " wins!";
+      winner = str(board[i][0]) + " wins!";
       return;
     }
     if (board[0][i] != 0 && board[0][i] == board[1][i] && board[1][i] == board[2][i]) {
       gameOver = true;
-      winner = board[0][i] + " wins!";
+      winner = str(board[0][i]) + " wins!";
       return;
     }
   }
   if (board[0][0] != 0 && board[0][0] == board[1][1] && board[1][1] == board[2][2]) {
     gameOver = true;
-    winner = board[0][0] + " wins!";
+    winner = str(board[0][0]) + " wins!";
     return;
   }
   if (board[0][2] != 0 && board[0][2] == board[1][1] && board[1][1] == board[2][0]) {
     gameOver = true;
-    winner = board[0][2] + " wins!";
+    winner = str(board[0][2]) + " wins!";
     return;
   }
   boolean draw = true;
