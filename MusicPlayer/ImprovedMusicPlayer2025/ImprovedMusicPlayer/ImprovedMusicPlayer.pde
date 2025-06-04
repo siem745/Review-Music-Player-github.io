@@ -65,7 +65,7 @@ void keyPressed() {
   //
   //Intermedate Algorithm : Play-Pause-Stop
   if ( key=='P' || key=='p' ) {
-    //Suspend Autoplay wth Boolean, engage it when playing againp
+    //Suspend Autoplay wth Boolean, engage it when playing again
     if ( playList[currentSong].isPlaying() ) {
       println("I am paused");
       deactiveAutoPlay();
